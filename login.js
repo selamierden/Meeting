@@ -3,7 +3,7 @@ $(document).ready(function() {
         { username: "selami", password: "ripple"},
         { username: "cemil", password: "bigmac"},
         { username: "elyasa", password: "cashier"},
-        { username: "talha", password: "oç"}
+        { username: "talha", password: "jelous"}
     ];
 
     $("#login-div").on("submit", function(e) {

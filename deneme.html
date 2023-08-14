@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkbox Durum Değiştirme</title>
+</head>
+<body>
+
+<label for="myCheckbox">Checkbox Durumu Değiştir</label>
+<input type="checkbox" id="myCheckbox">
+<button id="changeButton">Değiştir</button>
+
+<script>
+const checkbox = document.getElementById('myCheckbox');
+const changeButton = document.getElementById('changeButton');
+
+changeButton.addEventListener('click', function() {
+  checkbox.checked = !checkbox.checked;
+});
+</script>
+
+</body>
+</html>

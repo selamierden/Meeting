@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <!-- giriş-->
+    <div id="welcome-div">
+      <h1>Welcome <span id="isim"></span></h1>
+      <p>This is a secure area only accessible by authorized users.</p>
+    </div>
+
+     <!--toggle-->
+    <div id="toggles">
+      <div class="toggle">
+          <h1>Manavgatta mısın?</h1>
+          <label class="toggle-switch">
+              <input type="checkbox" id="atManavgat">
+              <div class="toggle-switch-background">
+                <div class="toggle-switch-handle"></div>
+              </div>
+          </label>          
+      </div>
+      <div class="toggle">
+          <h1>Evde misin?</h1>
+          <label class="toggle-switch">
+              <input type="checkbox" id="atHome">
+              <div class="toggle-switch-background">
+                <div class="toggle-switch-handle"></div>
+              </div>
+          </label>          
+      </div>
+      <div class="toggle">
+          <h1>Dışarı Çıkcan Mı?</h1>
+          <label class="toggle-switch">
+              <input type="checkbox" id="gonnaOut">
+              <div class="toggle-switch-background">
+                <div class="toggle-switch-handle"></div>
+              </div>
+            </label>          
+      </div>
+    </div>
+
+    <!--card-->
+    <div id="card-container">
+      <div class="card" id="selamiCard">
+        <h2>Selami</h2>
+        <div class="questionContainer"> <h3>Manavgatta mı?</h3> <input type="checkbox" id="selamiManavgat"> </div>
+        <div class="questionContainer"> <h3>Evde mi?</h3> <input type="checkbox"  id="selamiEv"> </div>
+        <div class="questionContainer"> <h3>Çıkacak mı?</h3> <input type="checkbox"  id="selamiDisari"> </div>
+      </div>
+      <div class="card" id="cemilCard">
+        <h2>Cemil</h2>
+        <div class="questionContainer"> <h3>Manavgatta mı?</h3> <input type="checkbox" id="cemilManavgat"> </div>
+        <div class="questionContainer"> <h3>Evde mi?</h3> <input type="checkbox" id="cemilEv"> </div>
+        <div class="questionContainer"> <h3>Çıkacak mı?</h3> <input type="checkbox" id="cemilDisari"> </div>
+      </div>
+      <div class="card" id="talhaCard">
+        <h2>Talha</h2>
+        <div class="questionContainer"> <h3>Manavgatta mı?</h3> <input type="checkbox" id="talhaManavgat"> </div>
+        <div class="questionContainer"> <h3>Evde mi?</h3> <input type="checkbox" id="talhaEv"> </div>
+        <div class="questionContainer"> <h3>Çıkacak mı?</h3> <input type="checkbox" id="talhaDisari"> </div>
+      </div>
+      <div class="card" id="elyasaCard">
+        <h2>Elyasa</h2>
+        <div class="questionContainer"> <h3>Manavgatta mı?</h3> <input type="checkbox" id="elyasaManavgat"> </div>
+        <div class="questionContainer"> <h3>Evde mi?</h3> <input type="checkbox" id="elyasaEv"> </div>
+        <div class="questionContainer"> <h3>Çıkacak mı?</h3> <input type="checkbox" id="elyasaDisari"> </div>
+      </div>
+  </div>
+
+  <!--log out buton-->
+  <a href="index.html" class="Btn">
+    <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>  
+    <div class="text">Logout</div>
+  </a>
+  
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
